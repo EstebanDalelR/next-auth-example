@@ -17,6 +17,7 @@ export const authOptions: NextAuthOptions = {
   theme: {
     colorScheme: "light",
   },
+  debug: true,
   callbacks: {
     async jwt({ token }) {
       token.userRole = "admin";
